@@ -1,0 +1,13 @@
+EEGLAB tutorial reproduction executed with EEGLAB 13.6.5b functions under GNU Octave 11.3.0
+1. Import yyw2_train.cnt with Neuroscan CNT reader
+2. Remove M1 and M2; load 64-channels.loc for remaining channel positions
+3. Resample 1000 Hz -> 250 Hz
+4. Average reference
+5. Zero-phase FIR band-pass 0.1-15 Hz
+6. Epoch around event codes 1 (target) and 2 (non-target), -0.2 to 1.0 s
+7. Baseline correction using -0.2 to 0 s
+8. Epoch rejection: maximum channel peak-to-peak <= 150 uV
+9. ERP/difference topographies at 300, 400, 500 ms
+10. PO4 Morlet ERSP/ITC, 2-30 Hz, baseline -0.2 to 0 s
+11. ICA on target epochs after 1-30 Hz preparation using EEGLAB runica (62 components)
+12. EEGLAB outputs: eeglab_octave_outputs/yyw2_raw.set, yyw2_preprocessed_250Hz.set, yyw2_target_epochs_clean.set, yyw2_nontarget_epochs_clean.set, yyw2_target_ICA.set

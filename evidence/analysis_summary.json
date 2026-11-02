@@ -1,0 +1,68 @@
+{
+  "source_file": "yyw2_train.cnt",
+  "original_channels": 64,
+  "analysis_channels": 62,
+  "removed_channels": [
+    "M1",
+    "M2"
+  ],
+  "original_sampling_rate_hz": 1000.0,
+  "analysis_sampling_rate_hz": 250.0,
+  "duration_s": 785.72,
+  "event_counts": {
+    "1": 59,
+    "2": 3941
+  },
+  "epoch_window_s": [
+    -0.2,
+    1.0
+  ],
+  "baseline_window_s": [
+    -0.2,
+    0.0
+  ],
+  "filter_hz": [
+    0.1,
+    15.0
+  ],
+  "rejection_threshold_uv_ptp": 150.0,
+  "target_epochs_before_rejection": 59,
+  "target_epochs_kept": 55,
+  "nontarget_epochs_before_rejection": 3941,
+  "nontarget_epochs_kept": 3879,
+  "target_rejected": 4,
+  "nontarget_rejected": 62,
+  "po4_target_peak_uv_250_600ms": 7.133053,
+  "po4_nontarget_peak_uv_250_600ms": 0.80891305,
+  "po4_difference_peak_uv_abs_250_600ms": 7.6161757,
+  "po4_difference_peak_latency_ms": 379.99999999999994,
+  "ica_components": 62,
+  "dipfit_component": 4,
+  "dipfit_method": "DIPFIT 2.3 coarse grid search",
+  "dipfit_components_tested": "1:10",
+  "dipfit_channels_used": 20,
+  "dipfit_position_mm": [
+    0.0,
+    0.0,
+    10.0
+  ],
+  "dipfit_residual_variance": 0.0278449,
+  "dipfit_residual_variance_percent": 2.78449,
+  "dipfit_selection_criterion": "lowest residual variance among components 1:10; RV below 5% GOOD-component criterion",
+  "time_frequency_channel": "PO4",
+  "time_frequency_hz": [
+    2.0,
+    30.0
+  ],
+  "time_frequency_baseline_s": [
+    -0.2,
+    0.0
+  ],
+  "eeglab_runtime": "EEGLAB 13.6.5b functions executed with GNU Octave 11.3.0 in the workspace",
+  "eeglab_raw_set": "eeglab_octave_outputs/yyw2_raw.set",
+  "eeglab_preprocessed_set": "eeglab_octave_outputs/yyw2_preprocessed_250Hz.set",
+  "eeglab_target_set": "eeglab_octave_outputs/yyw2_target_epochs_clean.set",
+  "eeglab_nontarget_set": "eeglab_octave_outputs/yyw2_nontarget_epochs_clean.set",
+  "eeglab_ica_set": "eeglab_octave_outputs/yyw2_target_ICA.set",
+  "processing_note": "Core import, preprocessing, epoching, threshold rejection, and ICA were executed with EEGLAB pop_* functions under GNU Octave; Python was used only to render report figures from the resulting EEGLAB .set/.fdt datasets."
+}

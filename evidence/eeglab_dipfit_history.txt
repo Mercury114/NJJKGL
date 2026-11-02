@@ -1,0 +1,9 @@
+
+EEG = eeg_checkset( EEG );
+component=4
+fit_method=coarse_grid_search
+components_tested=1:10
+channels_used=1:20
+rv=0.0278449
+posxyz=0 0 10
+momxyz=-43973.2 -12707 21169.2

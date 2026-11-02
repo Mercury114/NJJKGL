@@ -1,0 +1,11 @@
+# Local raw data and large binary outputs
+*.cnt
+*.fdt
+*.7z
+*.zip
+*.exe
+eeglab/
+octave/
+eeglab2025.1.0/
+fieldtrip-lite*/
+__pycache__/

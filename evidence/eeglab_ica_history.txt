@@ -1,0 +1,2 @@
+
+EEG = eeg_checkset( EEG );
